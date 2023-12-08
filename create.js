@@ -4,9 +4,10 @@ const db = new sqlite3.Database('test2.db');
 let schema = `
 create table groups(
   id integer primary key,
-  name text not null
-  name text not null
-  name text not null
+  name text,
+  birth text,
+  country text,
+  position text
 );
 `
 
