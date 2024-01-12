@@ -2,8 +2,9 @@ const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('test2.db');
 
 let sql = `
-insert into test5 ("name","company","date") values ("aaa","jfj","233hu");
+insert into BTS ("name","birth","country","position","comment") values ("ははが","2021年9月1日","韓国","メインボーカル","マネージャーに持ち上げられるまで起きないことがある");
 `
+
 
 db.serialize( () => {
 	db.run( sql, (error, row) => {

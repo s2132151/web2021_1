@@ -2,12 +2,13 @@ const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('test2.db');
 
 let schema = `
-create table groups(
+create table LESSERAFIM (
   id integer primary key,
   name text,
   birth text,
   country text,
-  position text
+  position text,
+  comment text
 );
 `
 

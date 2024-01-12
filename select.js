@@ -2,7 +2,7 @@ const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('test2.db');
 
 let sql = `
-select id,name,date,country,position from groups;
+select * from ITZY;
 `
 
 db.serialize( () => {
@@ -12,7 +12,7 @@ db.serialize( () => {
 			return;
 		}
 		for( let data of row ) {
-			console.log( data.id + ' | ' + data.name + ' | ' + data.company + ' | ' + data.date + ' | ' + data.comment );
+			console.log( data.id + ' | ' + data.name + ' | ' + data.birth + ' | ' + data.country + ' | ' + data.position + ' | ' + data.comment );
 		}
 	});
 });
