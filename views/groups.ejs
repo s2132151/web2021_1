@@ -1,0 +1,20 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Show message</title>
+</head>
+<body>
+<h2><%= data[0].names %>の詳細</h2>
+<table>
+<% for( let row of data ) { %>
+<tr><td>name</td><td><%= row.name %></td></tr>
+<tr><td>names</td><td><%= row.names %></td></tr>
+<tr><td>birth</td><td><%= row.birth %></td></tr>
+<tr><td>country</td><td><%= row.country %></td></tr>
+<tr><td>position</td><td><%= row.position %></td></tr>
+<tr><td>comment2</td><td><%= row.comment2 %></td></tr>
+<% } %>
+</table>
+</body>
+</html>

@@ -1,14 +1,14 @@
 const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database('test2.db');
+const db = new sqlite3.Database('main.db');
 
 let schema = `
-create table LESSERAFIM (
-  id integer primary key,
+create table ITZY(
   name text,
+  names text,
   birth text,
   country text,
   position text,
-  comment text
+  comment2 text
 );
 `
 
